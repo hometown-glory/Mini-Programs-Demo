@@ -1,0 +1,37 @@
+<!-- 实时天气模块 -->
+<view class="realtime-weather">
+  <!-- 当前温度 -->
+  <view class="current-temp">
+    {{weatherInfo.temperature}}
+    <text class="degree-symbol">°</text>
+  </view>
+  <!-- 当前定位信息 -->
+  <view class="location-info">{{address}}</view>
+  <!-- 当前天气状况 -->
+  <view class="weather-info">{{weatherInfo.weather}}  湿度 {{weatherInfo.humidity}}</view>
+
+</view>
+<!-- &lt;!&ndash; 24小时预报模块 &ndash;&gt; -->
+<!-- <view>24小时预报模块</view> -->
+<!-- 3天预报模块 -->
+<view class="centered-text">
+  3天预报模块
+</view>
+<view class="forecast-module">
+  <block wx:for="{{weather3dInfo}}" wx:key="date">
+    <view class="forecast-item">
+      <text class="day">{{item.dayOfWeek}}</text>
+      <text class="weather">{{item.weather}}</text>
+      <text class="temperature">{{item.temperature}}</text>
+    </view>
+  </block>
+  <!-- <view class="forecast-item"> -->
+  <!--   <text class="day">周四 9/26</text> -->
+  <!--   <text class="weather">晴天</text> -->
+  <!--   <text class="temperature">33℃~34℃</text> -->
+  <!-- </view> -->
+
+</view>
+
+
+

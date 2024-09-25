@@ -1,0 +1,81 @@
+.realtime-weather {
+    width: 80%;
+    height: 200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-temp {
+    font-size: 60px;
+    font-weight: bold;
+    position: relative;
+    align-items: center;
+}
+
+.degree-symbol {
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: -15px;
+}
+
+.location-info {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #555;
+}
+
+.weather-info {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #555;
+}
+
+.centered-text {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.forecast-module {
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 20px;
+    height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.forecast-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.day {
+    margin-left: 10px;
+}
+
+.weather {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.temperature {
+    margin-right: 10px;
+}
+
+
+
